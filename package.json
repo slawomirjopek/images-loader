@@ -1,0 +1,25 @@
+{
+  "name": "images-preloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "preloader.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slawomirjopek/images-preloader.git"
+  },
+  "author": "Sławomir Jopek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slawomirjopek/images-preloader/issues"
+  },
+  "homepage": "https://github.com/slawomirjopek/images-preloader#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-minify": "^1.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
