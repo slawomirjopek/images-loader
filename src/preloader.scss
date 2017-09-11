@@ -1,0 +1,9 @@
+.bw-placeholder {
+  $width: 200;
+  $ratio: 16/9;
+
+  background: silver;
+  display: inline-block;
+  height: #{$width/$ratio}px;
+  width: #{$width}px;
+}
