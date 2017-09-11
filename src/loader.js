@@ -42,6 +42,7 @@
             var $placeholderClone = $placeholder.cloneNode(false);
 
             $image.dataset.bwloaderIndex = index;
+            $image.style.display = 'none';
             $image.parentNode.insertBefore($placeholderClone, $image.nextSibling);
 
             this.placeholders.push({
@@ -65,6 +66,7 @@
             console.log('Image not loaded!: ', $image);
             return detachEvent(e.target);
         }
+        $image.style.display = 'inline';
 
         this.removePlaceholder($image);
     }
