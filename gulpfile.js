@@ -10,7 +10,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('styles', function() {
-    gulp.src('src/preloader.scss')
+    gulp.src('src/loader.scss')
         .pipe(sass({
             outputStyle: 'expanded'
         }).on('error', sass.logError))
@@ -21,7 +21,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('src/preloader.js')
+    return gulp.src('src/loader.js')
         .pipe(gulp.dest('dist/'))
         .pipe(minifyJs({
             noSource: true
@@ -30,6 +30,6 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('src/preloader.scss', ['styles']);
-    gulp.watch('src/preloader.js', ['scripts'])
+    gulp.watch('src/loader.scss', ['styles']);
+    gulp.watch('src/loader.js', ['scripts'])
 });
